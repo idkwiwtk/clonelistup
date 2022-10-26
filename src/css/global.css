@@ -1,0 +1,25 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.main-content,
+.container {
+  width: 90vw;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.icon-down-arrow {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.icon-down-arrow::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "▼";
+  font-size: 10px;
+}

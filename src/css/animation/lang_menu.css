@@ -1,0 +1,10 @@
+.animation-lang-menu-show {
+  display: block;
+  top: 100%;
+  /* transform: translateY(100%); */
+}
+
+.section-lang-menu.animation-lang-menu-show {
+  transition: 10s linear;
+  will-change: transform, top;
+}
