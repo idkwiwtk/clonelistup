@@ -1,0 +1,48 @@
+/*
+Archiving
+Tagging
+Trading
+*/
+
+/* #download .text-animation {
+  position: relative;
+}
+
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+} */
+
+#download .text-animation h2 {
+  border-right: 10px solid #fff;
+  animation: blink 1s step-end infinite;
+}
+
+#download .text-container img {
+  animation: like 2s infinite ease-in-out;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes like {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
