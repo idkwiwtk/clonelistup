@@ -1,12 +1,20 @@
 const animationTextList = ["Archiving", "Tagging", "Trading"];
 
-var PREV_WINDOW_Y;
+const SCROLL_STEP = 7;
 
 $(document).ready(function () {
   // $("#smooth-wrapper").smoothWheel();
   typing($(".text-animation h2"), animationTextList, 300);
 });
 
-$(window).scroll(function () {
-  guideScroll($("#guide"));
+let chk = true;
+$(window).scroll(function (e) {
+  if (chk) {
+    console.log(e.target.wheelDelta);
+    chk = false;
+    setTimeout(function () {
+      chk = true;
+    }, 1);
+    guideScroll(e, $("#guide"), SCROLL_STEP);
+  }
 });
