@@ -111,3 +111,19 @@
   width: 100vw;
   height: 100vh;
 }
+
+.sticky-parent {
+  height: 700vh !important;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.horizontal {
+  display: flex;
+}
