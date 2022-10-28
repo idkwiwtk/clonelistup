@@ -110,3 +110,7 @@
   background-color: #fff;
   width: 1970px;
 }
+
+.swiper-slide {
+  width: auto !important;
+}

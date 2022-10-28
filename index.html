@@ -33,7 +33,13 @@
     />
     <!-- javascript lib -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="./src/js/jquery.smooth.wheel.js"></script>
+    <!-- <script src="./src/js/jquery.smooth.wheel.js"></script> -->
+    <script src="./util/jQuery-easeScroll/jquery.easeScroll.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="header">
@@ -60,104 +66,106 @@
         </div>
       </div>
     </div>
-    <div id="smooth-wrapper" class="section-main">
-      <div id="home" class="section-home">
-        <div class="section-home-video-container">
-          <video loop autoplay muted playisnline>
-            <source src="./assets/mainVid.mp4" />
-          </video>
-        </div>
-        <div class="main-content">
-          <div class="section-home-title">
-            <div class="section-home-title-top">
-              <p>Expose Yourself To People</p>
-            </div>
-            <img src="./assets/se01_TEXT.png" alt="LOGO image" />
+    <div id="smooth-wrapper">
+      <div id="smooth-content" class="section-main">
+        <div id="home" class="section-home">
+          <div class="section-home-video-container">
+            <video loop autoplay muted playisnline>
+              <source src="./assets/mainVid.mp4" />
+            </video>
           </div>
-          <div class="section-home-download">
-            <div class="google-down">
-              <a href="https://www.google.com/" target="_blank"
-                >GOOGLE<br />PLAY</a
+          <div class="main-content">
+            <div class="section-home-title">
+              <div class="section-home-title-top">
+                <p>Expose Yourself To People</p>
+              </div>
+              <img src="./assets/se01_TEXT.png" alt="LOGO image" />
+            </div>
+            <div class="section-home-download">
+              <div class="google-down">
+                <a href="https://www.google.com/" target="_blank"
+                  >GOOGLE<br />PLAY</a
+                >
+                <img src="./assets/circle_line.png" alt="circle line" />
+              </div>
+              <div class="apple-down">
+                <a href="https://www.apple.com/" target="_blank">APP STORE</a>
+                <img src="./assets/circle_line.png" alt="circle line" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="download" class="section-download">
+          <div class="main-content">
+            <div class="text-container">
+              <div class="text-animation">
+                <h2>Archiving</h2>
+              </div>
+              <h2>YOUR</h2>
+              <h2>
+                <span>{</span>
+                <img src="/assets/like_up.svg" alt="link up" width="106" />
+                <span> ITEMS </span>
+                <span>}</span>
+              </h2>
+            </div>
+            <div class="down-btn-container">
+              <a
+                class="google-down-btn"
+                href="https://www.google.com/"
+                target="_blank"
               >
-              <img src="./assets/circle_line.png" alt="circle line" />
-            </div>
-            <div class="apple-down">
-              <a href="https://www.apple.com/" target="_blank">APP STORE</a>
-              <img src="./assets/circle_line.png" alt="circle line" />
+                <img src="./assets/google_icon.png" alt="google" />
+                Googole Play
+              </a>
+              <a
+                class="apple-down-btn"
+                href="https://www.apple.com"
+                target="_blank"
+              >
+                <img src="./assets/apple_icon.png" alt="apple" />
+                App Store
+              </a>
             </div>
           </div>
         </div>
-      </div>
-      <div id="download" class="section-download">
-        <div class="main-content">
-          <div class="text-container">
-            <div class="text-animation">
-              <h2>Archiving</h2>
-            </div>
-            <h2>YOUR</h2>
-            <h2>
-              <span>{</span>
-              <img src="/assets/like_up.svg" alt="link up" width="106" />
-              <span> ITEMS </span>
-              <span>}</span>
-            </h2>
-          </div>
-          <div class="down-btn-container">
-            <a
-              class="google-down-btn"
-              href="https://www.google.com/"
-              target="_blank"
-            >
-              <img src="./assets/google_icon.png" alt="google" />
-              Googole Play
-            </a>
-            <a
-              class="apple-down-btn"
-              href="https://www.apple.com"
-              target="_blank"
-            >
-              <img src="./assets/apple_icon.png" alt="apple" />
-              App Store
-            </a>
-          </div>
-        </div>
-      </div>
-      <div id="guide" class="section-guide">
-        <div class="section-guide-intro-container">
-          <div class="guide-intro-title">
-            <div class="shine-img">
-              <img src="./assets/se03_shine.png" alt="" width="170" />
-            </div>
-            <img src="./assets/se03_TEXT.png" alt="" width="800" />
-            <h2>My data platform</h2>
-            <div class="guide-scrolling-animation-container">
-              <span> Keep scrolling ▶ </span>
-              <span> Keep scrolling ▶ </span>
-              <span> Keep scrolling ▶ </span>
-              <span> Keep scrolling ▶ </span>
-              <span> Keep scrolling ▶ </span>
-              <span> Keep scrolling ▶ </span>
-            </div>
-          </div>
-          <div class="guide-intro-img">
-            <img src="./assets/se03_IMG01.jpg" alt="" width="1400" />
-            <div class="guide-intro-img-text-container">
-              <div class="text-01">
-                <span class="text-01-01">After </span>
-                <span class="text-01-02">purchasinng,</span>
+        <div id="guide" class="section-guide swiper">
+          <div class="section-guide-intro-container swiper-wrapper">
+            <div class="guide-intro-title swiper-slide">
+              <div class="shine-img">
+                <img src="./assets/se03_shine.png" alt="" width="170" />
               </div>
-              <div class="text-02">Data Archiving</div>
-              <div class="text-03">
-                <span class="text-03-01">on</span>
-                <span class="text-03-02">LIST UP</span>
+              <img src="./assets/se03_TEXT.png" alt="" width="800" />
+              <h2>My data platform</h2>
+              <div class="guide-scrolling-animation-container">
+                <span> Keep scrolling ▶ </span>
+                <span> Keep scrolling ▶ </span>
+                <span> Keep scrolling ▶ </span>
+                <span> Keep scrolling ▶ </span>
+                <span> Keep scrolling ▶ </span>
+                <span> Keep scrolling ▶ </span>
               </div>
             </div>
+            <div class="guide-intro-img swiper-slide">
+              <img src="./assets/se03_IMG01.jpg" alt="" width="1400" />
+              <div class="guide-intro-img-text-container">
+                <div class="text-01">
+                  <span class="text-01-01">After </span>
+                  <span class="text-01-02">purchasinng,</span>
+                </div>
+                <div class="text-02">Data Archiving</div>
+                <div class="text-03">
+                  <span class="text-03-01">on</span>
+                  <span class="text-03-02">LIST UP</span>
+                </div>
+              </div>
+            </div>
+            <div class="section-guide-content-container swiper-slide"></div>
           </div>
         </div>
-        <div class="section-guide-content-container"></div>
+        <div id="service" class="section-service">service</div>
+        <div id="blog" class="section-blog">blog</div>
       </div>
-      <div id="service" class="section-service">service</div>
-      <div id="blog" class="section-blog">blog</div>
     </div>
     <!-- javascript custom-->
     <script src="./src/js/haeder.js"></script>
