@@ -1,0 +1,15 @@
+.sticky-parent {
+  height: 700vh;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.horizontal {
+  display: flex;
+}
