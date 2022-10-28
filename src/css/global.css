@@ -23,3 +23,16 @@ body {
   content: "▼";
   font-size: 10px;
 }
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+#home {
+  background-color: red;
+}
+
+#download {
+  background-color: blue;
+}
