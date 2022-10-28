@@ -1,6 +1,18 @@
+html,
 body {
   background-color: #000;
   color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-top,
+.swiper-middle,
+.swiper-bottom,
+.swiper-wrapper,
+.swiper-slide {
+  width: 100%;
+  height: 100%;
 }
 
 .main-content,
@@ -22,17 +34,4 @@ body {
   transform: translate(-50%, -50%);
   content: "▼";
   font-size: 10px;
-}
-
-.swiper-slide {
-  width: 100%;
-  height: 100%;
-}
-
-#home {
-  background-color: red;
-}
-
-#download {
-  background-color: blue;
 }
