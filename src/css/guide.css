@@ -66,13 +66,24 @@
   font-size: 120px;
   font-family: "GT Walsheim Pro";
   font-weight: 700;
+  height: 100%;
+  color: #000;
+}
+
+.guide-intro-background {
+  position: relative;
+  width: 1400px;
+  height: 100%;
+  background: url("/assets/se03_IMG01.jpg") no-repeat center/cover;
+  overflow: hidden;
+  color: #fff;
 }
 
 .guide-intro-img-text-container {
   position: absolute;
   right: 0;
   top: 100px;
-  transform: translateX(574px);
+  transform: translateX(547px);
   white-space: nowrap;
   z-index: 2;
 }
@@ -107,7 +118,7 @@
   display: flex;
   padding: 8vh 0;
   background-color: #fff;
-  width: 100vw;
+  min-width: 100vw;
   height: 100vh;
 }
 
