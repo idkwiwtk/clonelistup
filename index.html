@@ -8,6 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LISTUP</title>
+    <!-- javascript lib -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script src="./src/js/jquery.smooth.wheel.js"></script> -->
+    <script src="./util/jQuery-easeScroll/jquery.easeScroll.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- font -->
     <link
       rel="stylesheet"
@@ -25,6 +34,7 @@
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./src/css/animation/main.css" />
     <link rel="stylesheet" href="./src/css/guide.css" />
+    <link rel="stylesheet" href="./src/css/guide.swiper.css" />
     <link rel="stylesheet" href="./src/css/animation/guide.css" />
     <link rel="stylesheet" href="./src/css/service.css" />
     <link rel="stylesheet" href="./src/css/blog.css" />
@@ -32,10 +42,6 @@
       rel="stylesheet"
       href="./src/css/animation/section-down-load-text.css"
     />
-    <!-- javascript lib -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <!-- <script src="./src/js/jquery.smooth.wheel.js"></script> -->
-    <script src="./util/jQuery-easeScroll/jquery.easeScroll.js"></script>
   </head>
   <body>
     <div class="header">
@@ -171,10 +177,132 @@
               </div>
             </div>
             <div class="section-guide-content-container">
-              <div class="intro-box"></div>
-              <div class="intro-box"></div>
-              <div class="intro-box"></div>
-              <div class="intro-box"></div>
+              <div class="intro-box">
+                <div class="intro-box-text">
+                  <div class="intro-box-index">01</div>
+                  <div class="intro-box-title"><span>Make </span>your data</div>
+                  <div class="intro-box-body">
+                    마이데이터를 활용하여 내 아이템의 데이터를 가질 수 있어요.
+                    <br />
+                    발행한 데이터를 나만의 방식으로 분류하여 저장해보세요.
+                  </div>
+                </div>
+                <div class="intro-box-slide swiper-intro-01">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG02_01.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG02_02.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG02_03.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG02_04.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <div class="intro-box">
+                <div class="intro-box-text">
+                  <div class="intro-box-index">02</div>
+                  <div class="intro-box-title">
+                    <span>Show </span>your lifestyle
+                  </div>
+                  <div class="intro-box-body">
+                    내가 발행한 데이터를 태그로 활용하여 공유할 수 있어요.
+                    <br />
+                    나와 같은 취향을 지닌 이용자들과 소통해보세요.
+                  </div>
+                </div>
+                <div class="intro-box-slide swiper-intro-02">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG03_01.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG03_02.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG03_03.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG03_04.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <div class="intro-box">
+                <div class="intro-box-text">
+                  <div class="intro-box-index">03</div>
+                  <div class="intro-box-title">
+                    <span>Manage </span> your items
+                  </div>
+                  <div class="intro-box-body">
+                    데이터를 활용하여 아이템들을 관리할 수 있어요.
+                    <br />
+                    사용하지 않는 물건을 선별하여 중고가격을 확인해보세요.
+                  </div>
+                </div>
+                <div class="intro-box-slide swiper-intro-03">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG04_01.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG04_02.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG04_03.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG04_04.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <div class="intro-box">
+                <div class="intro-box-text">
+                  <div class="intro-box-index">04</div>
+                  <div class="intro-box-title">
+                    <span>Trade </span>items with data
+                  </div>
+                  <div class="intro-box-body">
+                    아이템과 데이터를 함께 거래할 수 있어요.
+                    <br />
+                    나와 같은 취향을 지닌 이용자들과 아이템을 거래해보세요.
+                  </div>
+                </div>
+                <div class="intro-box-slide swiper-intro-04">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG05_01.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG05_02.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG05_03.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/se03_IMG05_04.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -186,6 +314,7 @@
     <script src="./src/js/haeder.js"></script>
     <script src="./src/js/text.animation.js"></script>
     <script src="./src/js/guide.horizen.scroll.js"></script>
+    <script src="./src/js/guide.intro.swiper.js"></script>
     <script src="./src/js/init.js"></script>
   </body>
 </html>
