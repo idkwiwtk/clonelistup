@@ -7,11 +7,20 @@
 }
 
 .section-guide-intro-container {
+  position: relative;
   display: flex;
   flex-direction: row;
   padding: 8vh 0;
-  background-color: #000;
+  background-color: #fff;
+}
+
+.section-guide-intro-container .black-box {
+  position: absolute;
+  top: 0;
+  left: 0;
   min-width: 1920px;
+  height: 100%;
+  background: #000;
 }
 
 .guide-intro-title {
@@ -117,7 +126,6 @@
 .section-guide-content-container {
   display: flex;
   padding: 8vh 0;
-  background-color: #fff;
   min-width: 100vw;
   height: 100vh;
 }
