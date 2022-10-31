@@ -1,0 +1,15 @@
+.section-service .service-list li h1 span {
+  animation: slashrolling 3s infinite ease-in-out;
+}
+
+@keyframes slashrolling {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

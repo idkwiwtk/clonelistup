@@ -1,4 +1,89 @@
 .section-service {
   width: 100vw;
+  min-height: 860px;
   height: 100vh;
+  background: url(/assets/se04_BG.jpg) no-repeat center/cover;
+  color: #000;
+}
+
+.section-service .main-content {
+  padding: 140px 0 150px;
+}
+
+.section-service .service-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Pretendard;
+  font-weight: 800;
+  font-size: 90px;
+}
+
+.section-service .service-title .title-01 {
+  margin-right: 10px;
+}
+
+.section-service .service-title .sub-title {
+  font-size: 40px;
+  line-height: 1.3;
+}
+
+.section-service .service-title .sub-title span {
+  font-weight: 500;
+}
+
+.section-service .service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 88px;
+  width: 73%;
+  margin-left: auto;
+  margin-top: 88px;
+  font-size: 20px;
+}
+
+.section-service .service-list li > div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.section-service .service-list li > div > p {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-service .service-list .idx {
+  font-family: "GT Walsheim Pro";
+  font-weight: 700;
+  font-size: 47px;
+}
+
+.section-service .service-list .idx span {
+  display: inline-block;
+}
+
+.section-service .service-list .content-container {
+  margin-left: 23px;
+}
+
+.section-service .service-list .content-container h2 {
+  font-family: "GT Walsheim Pro";
+  font-weight: 500;
+  font-size: 46px;
+  white-space: nowrap;
+}
+
+.section-service .service-list .content-container h2 span {
+  font-family: Garamond;
+  font-weight: 700;
+}
+
+.section-service .service-list .content-container h3 {
+  margin-top: 20px;
+  font-family: Pretendard;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.025em;
+  color: #666;
 }
