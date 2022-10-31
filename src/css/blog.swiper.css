@@ -1,0 +1,98 @@
+.blog-posts.swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.blog-posts.swiper-container .swiper-wrapper {
+  width: 100%;
+}
+
+.blog-posts.swiper-container .swiper-wrapper .swiper-slide {
+  position: relative;
+  width: 25% !important;
+  border: 1px solid #000;
+  border-top: none;
+  border-left: none;
+  padding: 50px;
+  filter: grayscale(1);
+}
+
+.blog-posts.swiper-container .swiper-wrapper .swiper-slide h1 {
+  display: -webkit-box;
+  height: 3em;
+  overflow: hidden;
+  font-family: "Prenedard";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.5em;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.blog-posts.swiper-container .swiper-wrapper .swiper-slide .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 22px;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 20px;
+  color: #666666;
+}
+
+.blog-posts.swiper-container .swiper-wrapper .swiper-slide .img-content {
+  margin-top: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.blog-posts.swiper-container .swiper-wrapper .swiper-slide .img-content:after {
+  content: "";
+  display: block;
+  padding-bottom: 78%;
+}
+
+.blog-posts.swiper-container
+  .swiper-wrapper
+  .swiper-slide:nth-of-type(1)
+  .img-content {
+  /* background-image: url("/assets/post-1.png"); */
+}
+
+.blog-posts.swiper-container
+  .swiper-wrapper
+  .swiper-slide:nth-of-type(2)
+  .img-content {
+  background-image: url("/assets/post-2.png");
+}
+
+.blog-posts.swiper-container
+  .swiper-wrapper
+  .swiper-slide:nth-of-type(3)
+  .img-content {
+  background-image: url("/assets/post-3.png");
+}
+
+.blog-posts.swiper-container
+  .swiper-wrapper
+  .swiper-slide:nth-of-type(4)
+  .img-content {
+  background-image: url("/assets/post-4.png");
+}
+
+.blog-posts.swiper-container
+  .swiper-wrapper
+  .swiper-slide:nth-of-type(5)
+  .img-content {
+  background-image: url("/assets/post-5.png");
+}
+
+.blog-posts.swiper-container
+  .swiper-wrapper
+  .swiper-slide:nth-of-type(6)
+  .img-content {
+  background-image: url("/assets/post-6.jpg");
+}

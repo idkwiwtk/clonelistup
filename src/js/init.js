@@ -5,3 +5,12 @@ $(document).ready(function () {
 });
 
 $("html").easeScroll();
+
+// AOS.init();
+$(window).scroll(function () {
+  if ($("#bottom-banner img").is(":offscreen")) {
+    $("#bottom-banner img").removeClass("zoom");
+  } else {
+    $("#bottom-banner img").addClass("zoom");
+  }
+});

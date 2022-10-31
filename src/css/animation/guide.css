@@ -1,12 +1,3 @@
 .guide-scrolling-animation-container span {
   animation: scrolling 4s infinite linear;
 }
-
-@keyframes scrolling {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}

@@ -28,21 +28,3 @@ Trading
 #download .text-container img {
   animation: like 2s infinite ease-in-out;
 }
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-@keyframes like {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-30deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}

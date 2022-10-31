@@ -1,4 +1,97 @@
 .section-blog {
+  position: relative;
   width: 100vw;
-  height: 100vh;
+  background: #fff;
+  color: #000;
+}
+
+.section-blog .line-scrolling {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  padding: 25px 0;
+  border: 1px solid #000;
+  border-left: none;
+  border-right: none;
+}
+
+.section-blog .line-scrolling p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 40px;
+  white-space: nowrap;
+  font-family: "GT Walsheim Pro";
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.section-blog .line-scrolling p i {
+  font-family: "Garamond";
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.section-blog .line-scrolling p span {
+  font-family: "PF";
+  font-weight: 500;
+  padding: 0 15px;
+}
+
+.section-blog .line-scrolling p span:nth-of-type(1) {
+  margin-left: 15px;
+}
+
+.section-blog .line-scrolling p span:nth-of-type(2) {
+  margin-right: 15px;
+}
+
+.section-blog .line-scrolling p img {
+  /* max-width: 100%;
+  height: auto;
+  vertical-align: top; */
+}
+
+.section-blog .view-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  background: url(/assets/blog_btnbg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Garamond";
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.section-blog .view-more span {
+  font-family: "GT Walsheim Pro";
+  font-weight: 500;
+}
+
+.section-blog .view-more .open,
+.section-blog .view-more .close {
+  font-family: "PF";
+  font-size: 40px;
+}
+
+.section-blog .view-more .open:after {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 23px;
+  background: url(/assets/blog_arrow.png) no-repeat;
+}
+
+.section-blog .view-more:hover {
+  background: url(/assets/blog_btnbg_over.png) no-repeat;
+  color: #fff;
+  cursor: pointer;
+}
+
+.section-blog .view-more:hover .open:after {
+  background: url(/assets/blog_arrow_over.png) no-repeat;
 }
