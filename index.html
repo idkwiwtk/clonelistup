@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- <script src="./src/js/jquery.smooth.wheel.js"></script> -->
     <script src="./util/jQuery-easeScroll/jquery.easeScroll.js"></script>
+    <script src="./src/js/jquery.easing.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -38,6 +39,7 @@
     <link rel="stylesheet" href="./src/css/global.css" />
     <link rel="stylesheet" href="./src/css/animation/global.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/animation/header.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./src/css/animation/main.css" />
     <link rel="stylesheet" href="./src/css/guide.css" />
@@ -62,11 +64,21 @@
           <img src="./assets/listup_logo.svg" alt="logo" />
         </div>
         <nav class="section-menu">
-          <a href="#home">HOME</a>
-          <a href="#download">다운로드</a>
-          <a href="#guide">가이드</a>
-          <a href="#service">서비스</a>
-          <a href="#blog">블로그</a>
+          <span>
+            <a href="#home">HOME</a>
+          </span>
+          <span>
+            <a href="#download">다운로드</a>
+          </span>
+          <span>
+            <a href="#guide">가이드</a>
+          </span>
+          <span>
+            <a href="#service">서비스</a>
+          </span>
+          <span>
+            <a href="#blog">블로그</a>
+          </span>
         </nav>
         <div class="section-lang">
           <img src="./assets/loca_icon.png" alt="lang" width="22" height="22" />
@@ -504,12 +516,18 @@
               ></div>
             </div>
           </div>
+          <div class="blog-drag-cursor">
+            <div>
+              <span>◀</span>
+              <p>Drag</p>
+              <span>▶</span>
+            </div>
+          </div>
         </div>
         <div class="view-more">
           View&nbsp;<span>more</span><span class="open">&nbsp;{&nbsp;</span
           ><span class="close">&nbsp;}</span>
         </div>
-        <div class="blog-drag-cursor"></div>
       </div>
       <div id="bottom-banner">
         <img src="./assets/se06Text.png" alt="" />
@@ -554,6 +572,7 @@
     <script src="./src/js/guide.horizen.scroll.js"></script>
     <script src="./src/js/guide.intro.swiper.js"></script>
     <script src="./src/js/blog.swiper.js"></script>
+    <script src="./src/js/blog.mouse.cursor.js"></script>
     <script src="./src/js/banner.screen.js"></script>
     <script src="./src/js/init.js"></script>
   </body>

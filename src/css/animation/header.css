@@ -1,0 +1,21 @@
+.section-menu span a {
+  position: relative;
+}
+
+.section-menu span a:after {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  transform: translateY(2px);
+  content: "";
+  width: 0;
+  height: 2px;
+  margin-top: 1px;
+  background: #fff;
+}
+
+.section-menu span:hover a:after {
+  width: 100%;
+  animation: gauge 1s;
+}

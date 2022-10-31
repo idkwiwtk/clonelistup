@@ -28,14 +28,14 @@
   flex-direction: row;
 }
 
-.section-menu a {
+.section-menu span {
   margin-right: 120px;
   font-family: Pretendard;
   font-weight: 500;
   font-size: 18px;
 }
 
-.section-menu a:last-child {
+.section-menu span:last-child {
   margin-right: 0px;
 }
 
