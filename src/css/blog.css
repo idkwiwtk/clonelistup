@@ -96,7 +96,7 @@
   justify-content: center;
   align-items: center;
   height: 90px;
-  background: url(/assets/blog_btnbg.png) no-repeat;
+  background: url(./assets/blog_btnbg.png) no-repeat;
   background-size: cover;
   background-position: center;
   font-family: "Garamond";
@@ -120,15 +120,15 @@
   display: inline-block;
   width: 34px;
   height: 23px;
-  background: url(/assets/blog_arrow.png) no-repeat;
+  background: url(./assets/blog_arrow.png) no-repeat;
 }
 
 .section-blog .view-more:hover {
-  background: url(/assets/blog_btnbg_over.png) no-repeat;
+  background: url(./assets/blog_btnbg_over.png) no-repeat;
   color: #fff;
   cursor: pointer;
 }
 
 .section-blog .view-more:hover .open:after {
-  background: url(/assets/blog_arrow_over.png) no-repeat;
+  background: url(./assets/blog_arrow_over.png) no-repeat;
 }
