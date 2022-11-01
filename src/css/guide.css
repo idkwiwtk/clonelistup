@@ -199,6 +199,7 @@
 .intro-box-slide .swiper-wrapper .swiper-slide img {
   height: 100%;
   width: auto;
+  background: #fff;
 }
 
 .intro-box:not(:first-child) {
