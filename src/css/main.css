@@ -111,11 +111,11 @@
 }
 
 .google-down {
-  background-image: url("/assets/B_google_icon.png");
+  background-image: url(../../assets/B_google_icon.png);
 }
 
 .apple-down {
-  background-image: url("/assets/B_apple_icon.png");
+  background-image: url(../../assets/B_apple_icon.png);
   margin-top: 45px;
 }
 

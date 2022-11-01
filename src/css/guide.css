@@ -83,7 +83,7 @@
   position: relative;
   width: 1400px;
   height: 100%;
-  background: url("/assets/se03_IMG01.jpg") no-repeat center/cover;
+  background: url(../../assets/se03_IMG01.jpg) no-repeat center/cover;
   overflow: hidden;
   color: #fff;
 }
