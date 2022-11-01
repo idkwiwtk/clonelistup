@@ -99,7 +99,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../assets/circle_line.png) no-repeat center/cover;
+  background: url(../../assets/circle_line.png) no-repeat center/cover;
   animation: circle_rotation 10s infinite linear;
   transition: 0.6s;
 }
